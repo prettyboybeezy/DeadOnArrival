@@ -1,0 +1,39 @@
+h1 {text-align: center; color: rgb(38, 223, 38);}
+h2 {text-align: center; color: rgb(38, 223, 38);}
+p {text-align: center; color: rgb(38, 223, 38);}
+
+body {
+    background-color: black;
+  }
+
+
+.vertical-menu {
+  width: 150px;
+}
+
+.vertical-menu a {
+  background-color: black;
+  color: rgb(38, 223, 38);
+  display: block;
+  padding: 12px;    
+  text-decoration: none;
+}
+
+.vertical-menu a:hover {
+  background-color: rgb(38, 223, 38);
+  color: black
+}
+
+.vertical-menu a.active {
+  background-color: red;
+  color: black;
+}
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   color: rgb(38, 223, 38);
+   text-align: center;
+}
