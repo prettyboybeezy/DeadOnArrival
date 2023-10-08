@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="ContentRowLayout" width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tbody>
+            <tr>
+                <td id="AbstractContainer" valign="top" width="100%">
+                    <div id="AbstractHeader">
+                        <div class="x6a">
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="x7b" style="background-image:url(/OA_HTML/cabo/images/swan/headingBarBg.gif);">
+                                <tbody>
+                                    <tr>
+                                        <td width="100%">
+                                            <h1 class="x7c">Abstracts</h1>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="x79">
+                            <table id="PoplistLayout" align="center" border="0" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr id="ponExtAbsPoplistRG_rowLayout" align="center" valign="middle">
+                                        <td id="ponExtAbsPoplistRG_cellFormat_1" valign="middle">
+                                            <table id="StatusPoplist__xc_" border="0" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td align="right" valign="middle" nowrap="">
+                                                            <span class="xc">Status</span>
+                                                        </td>
+                                                        <td width="12">
+                                                            <img src="/OA_HTML/cabo/images/swan/t.gif" width="12">
+                                                        </td>
+                                                        <td valign="middle" nowrap="">
+                                                            <select id="StatusPoplist" class="x8" onchange="" name="StatusPoplist">
+                                                                <option value="ALL_STATUS">All</option>
+                                                                <option value="PREVIEW">Preview</option>
+                                                                <option selected="" value="ACTIVE">Active</option>
+                                                                <option value="AUCTION_CLOSED">Closed</option>
+                                                                <option value="AWARDED">Awarded</option>
+                                                                <option value="CANCELLED">Cancelled</option>
+                                                            </select>
+                                                            <img src="/OA_HTML/cabo/images/swan/t.gif" width="5">
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                        <td id="ponExtAbsPoplistRG_cellFormat_2">
+                                            <button id="StatusPoplistGoButton" title="Go" class="x7n" style="background-image:url(/OA_HTML/cabo/images/swan/btn-bg1.gif)" onclick="submitForm('DefaultFormName',1,{'_FORM_SUBMIT_BUTTON':'StatusPoplistGoButton'});return false" type="submit">Go</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <span id="ABSTRACT">
+                                <span id="ABSTRACT_table" title="Negotiation Abstracts">
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="x1p">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%"></td>
+                                                                <td align="right" valign="middle">
+                                                                    <script>
+                                                                        function _navBarSubmit(formName, gotoEvent, navBar, vld, val, sze, partialTargets) {
+                                                                            var i = val.indexOf(',');
+                                                                            if (i >= 0) {
+                                                                                sze = val.substring(i + 1);
+                                                                                val = val.substring(0, i);
+                                                                            }
+                                                                            var submitFunc = (partialTargets == (void 0)) ? submitForm : _submitPartialChange;
+                                                                            return submitFunc(formName, vld, {
+                                                                                event: gotoEvent,
+                                                                                source: navBar,
+                                                                                value: val,
+                                                                                size: sze,
+                                                                                partialTargets: partialTargets
+                                                                            });
+                                                                        }
+    
+                                                                        function _navChoiceSubmit(choice, formName, gotoEvent, navBar, vld, size, partialTargets) {
+                                                                            if (!_navBarSubmit(formName, gotoEvent, navBar, vld, choice.options[choice.selectedIndex].value, size, partialTargets)) {
+                                                                                choice.selectedIndex = choice._lastValue;
+                                                                            }
+                                                                        }
+                                                                    </script>
+                                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="middle">
+                                                                                    <img src="/OA_HTML/cabo/images/cache/ctnavpd.gif" title="Previous functionality disabled" border="0">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle" nowrap="">
+                                                                                    <span class="x49">Previous</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle" nowrap="">
+                                                                                    <select id="M__Id" title="Select record set" class="x8" onchange="_navChoiceSubmit(this, 'DefaultFormName','goto','N11',1,null,'ABSTRACT_table')" onfocus="this._lastValue = this.selectedIndex">
+                                                                                        <option selected="" value="1,10">1-10</option>
+                                                                                        <option value="11,10">More...</option>
+                                                                                    </select>
+                                                                                    <script language="javascript">
+                                                                                        _setSelectIndexById("M__Id", 0)
+                                                                                    </script>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle" nowrap="">
+                                                                                    <a onclick="_navBarSubmit('DefaultFormName', 'goto','N11',1,'11', '10','ABSTRACT_table');return false" href="#" class="x48">Next 10</a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle">
+                                                                                    <a onclick="_navBarSubmit('DefaultFormName', 'goto','N11',1,'11', '10','ABSTRACT_table');return false" href="#">
+                                                                                        <img src="/OA_HTML/cabo/images/cache/ctnavn.gif" title="Select to view next set" border="0">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table class="x1o" cellpadding="1" cellspacing="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','0','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28437" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','0','','ABSTRACT_table');return false" href="#" class="x2a">Department Name <script>
+                                                            function _tableSortSubmit(formName, validate, sortEvent, table, val, stat, ptgt) {
+                                                                var submitFunc = (ptgt == (void 0)) ? submitForm : _submitPartialChange;
+                                                                submitFunc(formName, validate, {
+                                                                    event: sortEvent,
+                                                                    source: table,
+                                                                    value: val,
+                                                                    state: stat,
+                                                                    partialTargets: ptgt
+                                                                });
+                                                            }
+                                                        </script>
+                                                    </a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','1','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28438" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','1','','ABSTRACT_table');return false" href="#" class="x2a">Event</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','2','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28439" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','2','','ABSTRACT_table');return false" href="#" class="x2a">Program/Model</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','3','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28440" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','3','','ABSTRACT_table');return false" href="#" class="x2a">Solicitation Number</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','4','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28441" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','4','','ABSTRACT_table');return false" href="#" class="x2a">Specification Number</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','5','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28442" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','5','','ABSTRACT_table');return false" href="#" class="x2a">Solicitation Title</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','6','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28443" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','6','','ABSTRACT_table');return false" href="#" class="x2a">Advertisement Date</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','7','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28444" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','7','','ABSTRACT_table');return false" href="#" class="x2a">Supplier Response Start Date</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','8','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28445" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','8','','ABSTRACT_table');return false" href="#" class="x2a">Supplier Response Due Date</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','9','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28446" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','9','','ABSTRACT_table');return false" href="#" class="x2a">Protected Markets</a>
+                                                </th>
+                                                <th scope="col" class="x27 x5e" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','10','','ABSTRACT_table');return false">
+                                                    <a id="OASH__28447" onclick="_tableSortSubmit('DefaultFormName',1,'sort','N11','10','','ABSTRACT_table');return false" href="#" class="x2a">Deadline for Questions</a>
+                                                </th>
+                                                <th scope="col" class="x20 x4t">
+                                                    <span id="OASH__28448" class="x2b">Details</span>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:0" title="Department Name">CHICAGO DEPARTMENT OF TRANSPORTATION</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:0" title="Event">Commodities</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:0"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:0" title="Solicitation Number">9801</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:0" title="Specification Number">1262177A</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:0" title="Solicitation Title">1262177A: Detectable Warning Tiles, Cast Iron and Polymer Concrete (Group A- Cas</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:0" title="Advertisement Date">05-OCT-2023 10:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:0" title="Supplier Response Start Date">05-OCT-2023 10:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:0" title="Supplier Response Due Date">15-NOV-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:0"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:0" title="Deadline for Questions">19-OCT-2023 16:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:0" name="N11:detailImage:0" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'0','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!0R1Md1Wy7ph0PFn7vzUY6g',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:1" title="Department Name">CHICAGO DEPARTMENT OF TRANSPORTATION</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:1" title="Event">Commodities</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:1"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:1" title="Solicitation Number">9728</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:1" title="Specification Number">1265568</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:1" title="Solicitation Title">SPEC 1265568: Supply and Deliver Topsoil</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:1" title="Advertisement Date">20-SEP-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:1" title="Supplier Response Start Date">20-SEP-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:1" title="Supplier Response Due Date">02-NOV-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:1"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:1" title="Deadline for Questions">28-SEP-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:1" name="N11:detailImage:1" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'1','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!7YyREsuYEJ7rJoJErlNmZw',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:2" title="Department Name">FIRE DEPARTMENT</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:2" title="Event">Commodities</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:2"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:2" title="Solicitation Number">8616,1</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:2" title="Specification Number">1240508</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:2" title="Solicitation Title">1240508: CAMERA, CAMERA ACCESSORIES, PHOTOGRAPHIC EQUIPMENT &amp; PARTS</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:2" title="Advertisement Date">26-SEP-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:2" title="Supplier Response Start Date">26-SEP-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:2" title="Supplier Response Due Date">26-OCT-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:2"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:2" title="Deadline for Questions">12-OCT-2023 12:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:2" name="N11:detailImage:2" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'2','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!7gDXbRApyPtRnVsH6FoKZQ',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:3" title="Department Name">OFFICE OF PUBLIC SAFETY ADMINISTRATION</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:3" title="Event">Commodities</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:3"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:3" title="Solicitation Number">9672,1</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:3" title="Specification Number">1269533</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:3" title="Solicitation Title">1269533: Purchase of Various Work and Business Uniforms (Target Market)</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:3" title="Advertisement Date">21-AUG-2023 10:15:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:3" title="Supplier Response Start Date">21-AUG-2023 10:15:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:3" title="Supplier Response Due Date">19-OCT-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:3"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:3" title="Deadline for Questions">06-SEP-2023 16:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:3" name="N11:detailImage:3" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'3','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!LQ2F8fOavDYYswayH1ukRQ',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:4" title="Department Name">FIRE DEPARTMENT</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:4" title="Event">Commodities</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:4"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:4" title="Solicitation Number">9669,1</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:4" title="Specification Number">1279230</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:4" title="Solicitation Title">1279230: Uniform and Commissary Related Services 25% MBE and 5% WBE Goals</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:4" title="Advertisement Date">18-AUG-2023 10:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:4" title="Supplier Response Start Date">18-AUG-2023 10:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:4" title="Supplier Response Due Date">12-OCT-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:4"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:4" title="Deadline for Questions">31-AUG-2023 16:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:4" name="N11:detailImage:4" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'4','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!b18HRbAZNhIlGJzojdl7yQ',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:5" title="Department Name">CHICAGO DEPARTMENT OF TRANSPORTATION</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:5" title="Event">Construction</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:5"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:5" title="Solicitation Number">9597,4</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:5" title="Specification Number">1201402</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:5" title="Solicitation Title">1201402: Milwaukee Avenue Section 5 Improvements W. Logan Boulevard to W. Belmon</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:5" title="Advertisement Date">07-JUL-2023 10:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:5" title="Supplier Response Start Date">07-JUL-2023 10:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:5" title="Supplier Response Due Date">11-OCT-2023 11:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:5"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:5" title="Deadline for Questions">26-JUL-2024 16:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:5" name="N11:detailImage:5" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'5','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!Bs3B3A8d4JgVtEjOnit05A',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:6" title="Department Name">DEPARTMENT OF HOUSING</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:6" title="Event">Delegate Agency</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:6"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:6" title="Solicitation Number">9185</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:6" title="Specification Number">697255</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:6" title="Solicitation Title">Community Housing Development Organization (CHDO) Certification</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:6"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:6" title="Supplier Response Start Date">20-DEC-2022 14:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:6" title="Supplier Response Due Date">31-DEC-2024 12:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:6"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:6"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:6" name="N11:detailImage:6" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'6','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!raPpxSy1z0G936kuW8cFmA',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:7" title="Department Name">DEPARTMENT OF HEALTH</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:7" title="Event">Delegate Agency</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:7" title="Program/Model">CDPH-SUBST ABU</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:7" title="Solicitation Number">9661</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:7" title="Specification Number">1278969</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:7" title="Solicitation Title">Harm Reduction Services</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:7" title="Advertisement Date">25-SEP-2023 12:44:03</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:7" title="Supplier Response Start Date">25-SEP-2023 13:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:7" title="Supplier Response Due Date">26-OCT-2023 12:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:7"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:7" title="Deadline for Questions">11-OCT-2023 12:00:00</span>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:7" name="N11:detailImage:7" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'7','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!w4geoH95s2bAkLu4uc3JeA',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:8" title="Department Name">DEPT OF FAMILY AND SUPPORT SERVICES</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:8" title="Event">Delegate Agency</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:8" title="Program/Model">DFSS-HHS-CS-SS</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:8" title="Solicitation Number">9694</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:8" title="Specification Number">1280002</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:8" title="Solicitation Title">DFSS: Children Services: CEL Support Services: Family and Community Outreach</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:8"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:8" title="Supplier Response Start Date">20-SEP-2023 12:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:8" title="Supplier Response Due Date">25-OCT-2023 12:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:8"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:8"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:8" name="N11:detailImage:8" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'8','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!IOiZZY5QHD6b72LTSeGosA',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CocDepartmentName:9" title="Department Name">DEPT OF FAMILY AND SUPPORT SERVICES</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:EVENT:9" title="Event">Delegate Agency</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DELEGATE_PROGRAM:9" title="Program/Model">DFSS-HHS-CS-SS</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:NEGOTIATION_NUM:9" title="Solicitation Number">9697,1</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_SPEC_NUMBER:9" title="Specification Number">1280014</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:TITLE:9" title="Solicitation Title">DFSS: Children Services: Head Start Support Services Transportation</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:PREVIEW_DATE:9"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:OPEN_DATE:9" title="Supplier Response Start Date">02-OCT-2023 15:06:21</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:CLOSE_DATE:9" title="Supplier Response Due Date">24-OCT-2023 12:00:00</span>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_PROTECTED_MARKETS:9"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1s x57">
+                                                    <span id="N11:COC_DEADLINE_FOR_QUESTION:9"></span>
+                                                    <br>
+                                                </td>
+                                                <td class="x1w x57">
+                                                    <a id="N11:detailImage:9" name="N11:detailImage:9" onclick="submitForm('DefaultFormName',1,{'JRAD_PAGE_MODE':'FORM_READ_ONLY','DOCTYPE_ID':'{!!X5h77ftdp3ofiT8l.gvdqQ','FROM_PAGE':'PON_FORMS_JRAD_GENX','ABSTRACT_AUCTION_STATUS':'{!!76S1Xx.MBGwdF9mIXrMfRQ','FORM_ID':'120','evtSrcRowId':'AbstractExternalAM.ABSTRACT396_ABSTRACT_oracle_apps_pon_forms_jrad_server_FormsExtAbstractTableAM.AbstractFieldsTableVO','evtSrcRowIdx':'9','ABSTRACT_PDF_FLAG':'{!!O4OtS2sFc31yo.C9Wir2hw','OWNING_ENTITY_CODE':'PON_AUCTION_HEADERS_ALL','ORG_ID':'{!!VgyaZeplHY9YwKPF-80XKA','ENTITY_PK1':'{!!vv21X11Eea8RP.zSrmyQng',event:'DetailsIconClicked',source:'detailImage'});return false;" href="#">
+                                                        <img src="/OA_MEDIA/eyeglasses_24x24_transparent.gif" title="Details" border="0" align="middle">
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <table cellpadding="0" cellspacing="0" border="0" width="100%" class="x1q">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td width="100%"></td>
+                                                                <td align="right" valign="middle">
+                                                                    <table cellpadding="0" cellspacing="0" border="0">
+                                                                        <tbody>
+                                                                            <tr>
+                                                                                <td valign="middle">
+                                                                                    <img src="/OA_HTML/cabo/images/cache/ctnavpd.gif" title="Previous functionality disabled" border="0">
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle" nowrap="">
+                                                                                    <span class="x49">Previous</span>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle" nowrap="">
+                                                                                    <select id="M__Ida" title="Select record set" class="x8" onchange="_navChoiceSubmit(this, 'DefaultFormName','goto','N11',1,null,'ABSTRACT_table')" onfocus="this._lastValue = this.selectedIndex">
+                                                                                        <option selected="" value="1,10">1-10</option>
+                                                                                        <option value="11,10">More...</option>
+                                                                                    </select>
+                                                                                    <script language="javascript">
+                                                                                        _setSelectIndexById("M__Ida", 0)
+                                                                                    </script>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle" nowrap="">
+                                                                                    <a onclick="_navBarSubmit('DefaultFormName', 'goto','N11',1,'11', '10','ABSTRACT_table');return false" href="#" class="x48">Next 10</a>
+                                                                                </td>
+                                                                                <td>
+                                                                                    <img src="/OA_HTML/cabo/images/swan/t.gif" width="5" height="1">
+                                                                                </td>
+                                                                                <td valign="middle">
+                                                                                    <a onclick="_navBarSubmit('DefaultFormName', 'goto','N11',1,'11', '10','ABSTRACT_table');return false" href="#">
+                                                                                        <img src="/OA_HTML/cabo/images/cache/ctnavn.gif" title="Select to view next set" border="0">
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </span>
+                                <span id="ABSTRACT_table-hv"></span>
+                            </span>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
